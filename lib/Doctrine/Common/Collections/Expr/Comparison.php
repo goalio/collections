@@ -36,6 +36,7 @@ class Comparison implements Expression
     const IS   = 'IS';
     const IN   = 'IN';
     const NIN  = 'NIN';
+    const LIKE = 'LIKE';
 
     /**
      * @var string

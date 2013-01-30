@@ -148,4 +148,15 @@ class ExpressionBuilder
     {
         return new Comparison($field, Comparison::NIN, new Value($values));
     }
+
+    /**
+     * @param string $field
+     * @param mixed  $values
+     *
+     * @return Comparison
+     */
+    public function like($field, $value)
+    {
+        return new Comparison($field, Comparison::LIKE, new Value($value));
+    }
 }
