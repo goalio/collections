@@ -37,6 +37,7 @@ class Comparison implements Expression
     const IN   = 'IN';
     const NIN  = 'NIN';
     const LIKE = 'LIKE';
+    const CONTAINS = 'CONTAINS';
 
     /**
      * @var string

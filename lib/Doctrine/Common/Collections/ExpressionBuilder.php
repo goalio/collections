@@ -159,4 +159,15 @@ class ExpressionBuilder
     {
         return new Comparison($field, Comparison::LIKE, new Value($value));
     }
+
+    /**
+     * @param string $field
+     * @param mixed  $values
+     *
+     * @return Comparison
+     */
+    public function contains($field, $value)
+    {
+        return new Comparison($field, Comparison::CONTAINS, new Value($value));
+    }
 }
