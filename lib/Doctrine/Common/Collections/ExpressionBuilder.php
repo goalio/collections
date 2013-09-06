@@ -129,6 +129,16 @@ class ExpressionBuilder
 
     /**
      * @param string $field
+     *
+     * @return Comparison
+     */
+    public function nis($field)
+    {
+        return new Comparison($field, Comparison::NIS, new Value(null));
+    }
+
+    /**
+     * @param string $field
      * @param mixed  $values
      *
      * @return Comparison

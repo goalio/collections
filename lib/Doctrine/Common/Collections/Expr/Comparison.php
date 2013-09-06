@@ -34,6 +34,7 @@ class Comparison implements Expression
     const GT   = '>';
     const GTE  = '>=';
     const IS   = 'IS';
+    const NIS   = 'NIS';
     const IN   = 'IN';
     const NIN  = 'NIN';
     const LIKE = 'LIKE';
